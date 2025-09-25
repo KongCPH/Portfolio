@@ -86,5 +86,37 @@ Mobile - under 480px */
     gap: 30px;
 }
 
+/* kasse til projekter */
+.box{
+    background-color: #D9D9D9;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.box img {
+    width: 100%;      /* Fylder boksen */
+    height: 100%;     /* Fylder boksen */
+}
+
+/* flexbox til kasserne */
+.boxcontainer{
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* Centrerer kasserne vandret */
+}
+
+/* responsivt */
+
+@media (max-width: 480px) {
+    .boxcontainer {
+        flex-direction: column; /* Gør dem lodrette */
+        align-items: center;    /* Centrerer dem lodret */
+    }
+    .box {
+        width: 250px;  /* Lidt mindre */
+        height: 160px; /* Lidt mindre */
+    }
+}
 
 
